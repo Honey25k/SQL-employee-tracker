@@ -9,7 +9,7 @@ connectionToDb.connect(function (err) {
   initalize();
 });
 
-console.table("-----Welcome to Employee Tracker-----");
+console.table("-----Welcome to the Employee Tracker-----");
 
 // Use inquirer to ask initial questions.
 const initalize = async () => {
