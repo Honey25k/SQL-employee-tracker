@@ -1,27 +1,34 @@
-INSERT INTO department (name) VALUES
-("Information technology"),
-("Accounting"),
-("HR"),
-("Service");
+USE employee_tracker_db;
 
-INSERT INTO role (title, salary, department_id) VALUES
-("Product Manager", 150000, 1),
-("Product Owner", 130000, 1),
-("Scrum Master", 105000, 1),
-("Accountant", 70000, 2),
-("HR Manager", 120000, 3),
-("HR Assistant", 80000, 3),
-("Sales Manager", 90000, 4),
-("Customer Service Agent", 60000, 4);
+INSERT INTO department (name) 
+VALUES 
+('Finance'),
+('Operations'),
+('Marketing'),
+('Sales'),
+('General Management');
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
-("James", "Doe", 1, null),
-("Sabrina", "Spellman", 2, 1),
-("Harvey", "Specter", 3, null),
-("Luis", "Litt", 4, 3),
-("Stella", "Johnsson", 5, null),
-("Donald", "Duck", 6, 5,),
-("Lisa", "Simpson", 7, null),
-("Salem", "Saberhagen", 8, 7);
 
+INSERT INTO role (title, salary, department_id)
+VALUES ('Chief Executive', 65000.00, 1),
+('Advertising Director', 32000.00, 2),
+('Marketing Assistant', 23000.00, 2),
+('Senior Finance Analyst', 54700.00, 3),
+('Finance Analyst', 38000.00, 3),
+('Product Engineer', 43500.00, 4),
+('Supply Chain Manager', 67650.00, 4),
+('Sales Representative', 25000.00, 5),
+('Sales Manager', 35000.00, 5);
+
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES ('Bob', 'Smith', 1, 1),
+('Jackson', 'Hill', 2, 2),
+('Hetty', 'feather', 3, 2),
+('Jack', 'Taylor', 4, null),
+('Killua', 'Boxley', 5, 5),
+('Alex', 'Marks', 6, 6),
+('Terresa', 'Ferez', 7, 6),
+('Rob', 'Travis', 8, 1),
+('Valery', 'Scott', 9, 1);
 
